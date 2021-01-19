@@ -1,63 +1,140 @@
+import clsx from 'clsx';
 import Head from 'next/head';
+import Card from 'react-bootstrap/Card';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import CardDeck from 'react-bootstrap/CardDeck';
 import Button from 'react-bootstrap/Button';
 
 import Layout from 'components/Layout';
-import styles from '@styles/Home.module.css';
 
-export default function Home() {
+import styles from '@styles/Home.module.scss';
+
+const HomePage = () => {
+  const goToLink = (link: any, newtab: any = '_blank') => {
+    window.open(link, newtab);
+  }
+
   return (
     <Layout>
-        <Head>
-          <title>Memajukan Brand Indonesia | Terpusat</title>
-          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-          <meta name="theme-color" content="#000000" />
-          <meta name="msapplication-TileColor" content="#000000" />
+      <Head>
+        <title>Memajukan Brand Indonesia | Terpusat</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="msapplication-TileColor" content="#000000" />
 
-          <meta name="msapplication-TileImage" content="/assets/images/ico/ms-icon-144x144.png" />
-          <meta name="description" content="Pusat belanja, investasi, layanan, informasi brand Indonesia." />
-        </Head>
+        <meta name="msapplication-TileImage" content="/assets/images/ico/ms-icon-144x144.png" />
+        <meta name="description" content="Pusat belanja, investasi, layanan, informasi brand Indonesia." />
+      </Head>
 
-        <main className={styles.main}>
-          <Button>Test Cuy</Button>
-          {/* <h1 className={styles.title}>
-            Welcome to <a href="https://nextjs.org">Next.js!</a>
-          </h1>
-
-          <p className={styles.description}>
-            Get started by editing{' '}
-            <code className={styles.code}>pages/index.js</code>
-          </p>
-
-          <div className={styles.grid}>
-            <a href="https://nextjs.org/docs" className={styles.card}>
-              <h3>Documentation &rarr;</h3>
-              <p>Find in-depth information about Next.js features and API.</p>
-            </a>
-
-            <a href="https://nextjs.org/learn" className={styles.card}>
-              <h3>Learn &rarr;</h3>
-              <p>Learn about Next.js in an interactive course with quizzes!</p>
-            </a>
-
-            <a
-              href="https://github.com/vercel/next.js/tree/master/examples"
-              className={styles.card}
-            >
-              <h3>Examples &rarr;</h3>
-              <p>Discover and deploy boilerplate example Next.js projects.</p>
-            </a>
-
-            <a
-              href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              className={styles.card}
-            >
-              <h3>Deploy &rarr;</h3>
-              <p>
-                Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-            </a>
-          </div> */}
-        </main>
+      <main>
+        <Container fluid className="p-0">
+          <Row className={clsx('mt-4 pt-2')}>
+            <Col xs={12} md={12} lg={12}>
+              <h4>Market Place</h4>
+            </Col>
+          </Row>
+          <Row className={clsx(styles.scrollingWrapper, 'flex-row flex-nowrap pt-2')}>
+            <Col xs={6} md={6} lg={3}>
+              <CardDeck>
+                <Card>
+                  <Card.Body>
+                    <Card.Title className="font-14">Tokopedia</Card.Title>
+                    <Card.Text className="font-12">
+                      Temukan terpusat di tokopedia, belanja sekarang dan dapatkan penawaran terbaik kami.<br /><br />
+                      <p className="text-right"><Button onClick={() => goToLink('https://www.tokopedia.com/terpusat')} variant="outline-success" size="sm">Kunjungi</Button></p>
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </CardDeck>
+            </Col>
+            <Col xs={6} md={6} lg={3}>
+              <CardDeck>
+                <Card>
+                  <Card.Body>
+                    <Card.Title className="font-14">Bukalapak</Card.Title>
+                    <Card.Text className="font-12">
+                      Temukan terpusat di bukalapak, belanja sekarang dan dapatkan penawaran terbaik kami.<br /><br />
+                      <p className="text-right"><Button onClick={() => goToLink('https://www.bukalapak.com/u/terpusat')} variant="outline-danger" size="sm">Kunjungi</Button></p>
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </CardDeck>
+            </Col>
+            <Col xs={6} md={6} lg={3}>
+              <CardDeck>
+                <Card>
+                  <Card.Body>
+                    <Card.Title className="font-14">Shopee</Card.Title>
+                    <Card.Text className="font-12">
+                      Temukan terpusat di shopee, belanja sekarang dan dapatkan penawaran terbaik kami.<br /><br />
+                      <p className="text-right"><Button onClick={() => goToLink('https://shopee.co.id/terpusat')} variant="outline-warning" size="sm">Kunjungi</Button></p>
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </CardDeck>
+            </Col>
+          </Row>
+          <Row className={clsx('mt-4 pt-2')}>
+            <Col xs={12} md={12} lg={12}>
+              <h4>Sosial Media</h4>
+            </Col>
+          </Row>
+          <Row className={clsx(styles.scrollingWrapper, 'flex-row flex-nowrap pt-2')}>
+            <Col xs={6} md={6} lg={3}>
+              <CardDeck>
+                <Card>
+                  <Card.Body>
+                    <Card.Title className="font-14">Facebook</Card.Title>
+                    <Card.Text className="font-12">
+                      Ikutin kami di Facebook, dan pastikan Anda menerima pembaharuan terpusat di facebook
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </CardDeck>
+            </Col>
+            <Col xs={6} md={6} lg={3}>
+              <CardDeck>
+                <Card>
+                  <Card.Body>
+                    <Card.Title className="font-14">Instagram</Card.Title>
+                    <Card.Text className="font-12">
+                      Ikutin kami di Instagram, dan pastikan Anda menerima pembaharuan terpusat di instagram
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </CardDeck>
+            </Col>
+            <Col xs={6} md={6} lg={3}>
+              <CardDeck>
+                <Card>
+                  <Card.Body>
+                    <Card.Title className="font-14">Twitter</Card.Title>
+                    <Card.Text className="font-12">
+                      Ikutin kami di Twitter, dan pastikan Anda menerima pembaharuan terpusat di twitter
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </CardDeck>
+            </Col>
+            <Col xs={6} md={6} lg={3}>
+              <CardDeck>
+                <Card>
+                  <Card.Body>
+                    <Card.Title className="font-14">Line</Card.Title>
+                    <Card.Text className="font-12">
+                      Ikutin kami di Line, dan pastikan Anda menerima pembaharuan terpusat di line Today
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </CardDeck>
+            </Col>
+          </Row>
+        </Container>
+      </main>
     </Layout>
   )
 }
+
+export default HomePage;

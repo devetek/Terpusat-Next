@@ -1,0 +1,56 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: #555;
+  font-family: Muli, Roboto, Helvetica, Neue, Arial, sans-serif, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans Neue, -apple-system, BlinkMacSystemFont,
+    Segoe UI;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+a {
+  color: #555;
+}
+
+a:hover, a:focus {
+  color: #e65540 !important;
+}
+
+footer {
+  background-color: #f0f0f0;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  color: #555;
+  padding: 25px;
+  font-size: 11px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@include media-breakpoint-only(xs) {
+  main {
+    margin-bottom: 65px;
+  }
+}
+
+.font-14 {
+	font-size: 14px;
+}
+
+.font-12 {
+	font-size: 12px;
+}
