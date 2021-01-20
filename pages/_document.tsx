@@ -26,7 +26,18 @@ class MyDocument extends Document {
           <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/ico/favicon-96x96.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/ico/favicon-16x16.png" />
           <link rel="manifest" href="/manifest.json" />
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-91861704-2"
+          ></script>
           <script type="text/javascript" src="/assets/js/analytics.js"></script>
+          <noscript
+          ><img
+              height="1"
+              width="1"
+              style={{ display: 'none' }}
+              src="https://www.facebook.com/tr?id=354144445660476&ev=PageView&noscript=1"
+            /></noscript>
         </Head>
         <body>
           <Main />
