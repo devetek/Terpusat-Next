@@ -32,8 +32,8 @@ const TeamPage = () => {
                 <Card>
                   <Card.Body>
                     <Card.Title className="font-14">Gandhos</Card.Title>
-                    <Card.Text>
-                      <p className="font-12">Semangat kejujuran dan kerja keras selalu dijunjung tinggi. Semoga semakin hari sholatnya semakin tidak ada yang bolong.</p>
+                    <Card.Text className="font-12">
+                      Semangat kejujuran dan kerja keras selalu dijunjung tinggi. Semoga semakin hari sholatnya semakin tidak ada yang bolong.
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -49,8 +49,8 @@ const TeamPage = () => {
                 <Card>
                   <Card.Body>
                     <Card.Title className="font-14">Ruli</Card.Title>
-                    <Card.Text>
-                      <p className="font-12">Anak muda dengan semangat berapi. Dukung dan do'akan semoga semakin dewasa dan menjadi semakin baik.</p>
+                    <Card.Text className="font-12">
+                      Anak muda dengan semangat berapi. Dukung dan do'akan semoga semakin dewasa dan menjadi semakin baik.
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -61,8 +61,8 @@ const TeamPage = () => {
                 <Card>
                   <Card.Body>
                     <Card.Title className="font-14">Daus</Card.Title>
-                    <Card.Text>
-                      <p className="font-12">Freshgraduade yang haus akan belajar. Dedikasi dan konsistensi membuat hasil yang tidak bisa dibohongi.</p>
+                    <Card.Text className="font-12">
+                      Freshgraduade yang haus akan belajar. Dedikasi dan konsistensi membuat hasil yang tidak bisa dibohongi.
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -73,8 +73,8 @@ const TeamPage = () => {
                 <Card>
                   <Card.Body>
                     <Card.Title className="font-14">Jodi</Card.Title>
-                    <Card.Text>
-                      <p className="font-12">Bertalenta dan berkomitmen di bidang fotografer. Foto yang dihasilkan sangat memanjakan mata.</p>
+                    <Card.Text className="font-12">
+                      Bertalenta dan berkomitmen di bidang fotografer. Foto yang dihasilkan sangat memanjakan mata.
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -90,8 +90,8 @@ const TeamPage = () => {
                 <Card>
                   <Card.Body>
                     <Card.Title className="font-14">Prakasa</Card.Title>
-                    <Card.Text>
-                      <p className="font-12">Hamba Allah, seorang ayah dan suami yang fakir, berusaha menjalankan kehidupan sesuai kemampuan.</p>
+                    <Card.Text className="font-12">
+                      Hamba Allah, seorang ayah dan suami yang fakir, berusaha menjalankan kehidupan sesuai kemampuan.
                     </Card.Text>
                   </Card.Body>
                 </Card>
