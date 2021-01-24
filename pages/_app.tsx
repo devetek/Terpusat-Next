@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { AppProps } from 'next/app';
 
 import '@styles/globals.scss';
@@ -14,7 +15,12 @@ import '@styles/globals.scss';
  * - https://github.com/luckdev01/React-NextJS-Graphql-eCommerce
  */
 const App = ({ Component, pageProps }: AppProps) => {
-  return <Component {...pageProps} />
+  return (
+    <Component {...pageProps}>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      </Head>
+    </Component>)
 }
 
 export default App
