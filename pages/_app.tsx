@@ -9,6 +9,7 @@ import '@styles/globals.scss';
  * @param pageProps any data props
  * 
  * References:
+ * - https://graphcms.com/
  * - https://react-bootstrap.github.io/
  * - https://github.com/luckdev01/React-NextJS-Graphql-eCommerce
  */

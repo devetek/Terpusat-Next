@@ -12,6 +12,10 @@ class MyDocument extends Document {
         <Head>
           <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
           <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+          <meta name="theme-color" content="#000000" />
+          <meta name="msapplication-TileColor" content="#000000" />
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+          <meta name="msapplication-TileImage" content="/assets/images/ico/ms-icon-144x144.png" />
           <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/ico/apple-icon-57x57.png" />
           <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/ico/apple-icon-60x60.png" />
           <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/ico/apple-icon-72x72.png" />

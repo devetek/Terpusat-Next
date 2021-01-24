@@ -18,7 +18,7 @@ const TeamPage = () => {
         <meta name="msapplication-TileColor" content="#000000" />
 
         <meta name="msapplication-TileImage" content="/assets/images/ico/ms-icon-144x144.png" />
-        <meta name="description" content="Team Terpusat - Pusat belanja, investasi, layanan, informasi brand Indonesia." />
+        <meta name="description" content="Team Terpusat, dibalik pusat belanja, investasi, layanan, informasi untuk majukan brand Indonesia." />
       </Head>
 
       <main>

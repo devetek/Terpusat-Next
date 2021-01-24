@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import Head from 'next/head';
-import ErrorPage from 'next/error';
 import { useRouter } from 'next/router';
 import Carousel from 'react-bootstrap/Carousel';
 import Container from 'react-bootstrap/Container';
@@ -17,7 +16,7 @@ import ProductsPageQuery from '@queries/productDetail/productsPage';
 
 export async function getStaticProps({ params }) {
     const variables = { "slug": params.slug };
-    const { product } = await GraphqlClient(ProductQuery, variables);
+    const { product = null } = await GraphqlClient(ProductQuery, variables);
 
     return {
         props: {
@@ -37,7 +36,7 @@ export async function getStaticPaths() {
                 },
             }
         }),
-        fallback: false,
+        fallback: true,
     }
 }
 
@@ -45,14 +44,14 @@ export async function getStaticPaths() {
  * 
  * Product detail page, query/mutation data can be found from location queries/productDetail
  * 
- * @param product Product detail
+ * @param product Product detail page
  * 
  */
 const ProductDetailPage = ({ product }) => {
     const router = useRouter();
 
-    if (!router.isFallback && !product?.slug) {
-        return <ErrorPage statusCode={404} />
+    if (router.isFallback) {
+        return <div>Loading...</div>;
     }
 
     const images = product?.images ?? [];
@@ -61,12 +60,7 @@ const ProductDetailPage = ({ product }) => {
         <Layout>
             <Head>
                 <title>{product.name} - Terpusat</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-                <meta name="theme-color" content="#000000" />
-                <meta name="msapplication-TileColor" content="#000000" />
-
-                <meta name="msapplication-TileImage" content="/assets/images/ico/ms-icon-144x144.png" />
-                <meta name="description" content="Tentang Terpusat - Pusat belanja, investasi, layanan, informasi brand Indonesia." />
+                <meta name="description" content={`Jual produk ${product.name} - Terpusat`} />
             </Head>
             <main>
                 <Container fluid className="p-0">

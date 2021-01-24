@@ -13,12 +13,7 @@ const AboutPage = () => {
     <Layout>
       <Head>
         <title>Tentang - Terpusat</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="msapplication-TileColor" content="#000000" />
-
-        <meta name="msapplication-TileImage" content="/assets/images/ico/ms-icon-144x144.png" />
-        <meta name="description" content="Tentang Terpusat - Pusat belanja, investasi, layanan, informasi brand Indonesia." />
+        <meta name="description" content="Tentang Terpusat, pusat belanja, investasi, layanan, informasi untuk majukan brand Indonesia." />
       </Head>
 
       <main>

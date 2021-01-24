@@ -22,13 +22,8 @@ const Page404 = () => {
     return (
         <Layout>
             <Head>
-                <title>Memajukan Brand Indonesia | Terpusat</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-                <meta name="theme-color" content="#000000" />
-                <meta name="msapplication-TileColor" content="#000000" />
-
-                <meta name="msapplication-TileImage" content="/assets/images/ico/ms-icon-144x144.png" />
-                <meta name="description" content="Pusat belanja, investasi, layanan, informasi brand Indonesia." />
+                <title>Halaman Tidak Ditemukan | Terpusat</title>
+                <meta name="description" content="Halaman yang Anda cari di terpusat tidak ditemukan, silahkan kembali ke halaman utama." />
             </Head>
 
             <main>

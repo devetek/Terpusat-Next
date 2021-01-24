@@ -39,12 +39,7 @@ const HomePage = () => {
   return (
     <Layout>
       <Head>
-        <title>Memajukan Brand Indonesia | Terpusat</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="msapplication-TileColor" content="#000000" />
-
-        <meta name="msapplication-TileImage" content="/assets/images/ico/ms-icon-144x144.png" />
+        <title>Terpusat | Memajukan Brand Indonesia</title>
         <meta name="description" content="Pusat belanja, investasi, layanan, informasi brand Indonesia." />
       </Head>
 
@@ -159,7 +154,7 @@ const HomePage = () => {
           </Row>
           <Row className={clsx('mt-4 pt-2')}>
             <Col xs={12} md={12} lg={12}>
-              <h4>Terbaru</h4>
+              <h4>Produk</h4>
             </Col>
           </Row>
           <Row className={clsx(styles.scrollingWrapper, 'flex-row flex-nowrap pt-2')}>
