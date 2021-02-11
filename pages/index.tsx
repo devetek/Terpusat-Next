@@ -111,6 +111,9 @@ const HomePage = () => {
                     <Card.Text className="font-12">
                       Ikutin kami di Facebook, dan pastikan Anda menerima pembaharuan terpusat di facebook
                     </Card.Text>
+                    <Card.Text className="font-12 text-right">
+                      <Button onClick={() => goToLink('https://www.facebook.com/terpusat')} variant="outline-primary" size="sm">Kunjungi</Button>
+                    </Card.Text>
                   </Card.Body>
                 </Card>
               </CardDeck>
@@ -122,6 +125,9 @@ const HomePage = () => {
                     <Card.Title className="font-14">Instagram</Card.Title>
                     <Card.Text className="font-12">
                       Ikutin kami di Instagram, dan pastikan Anda menerima pembaharuan terpusat di instagram
+                    </Card.Text>
+                    <Card.Text className="font-12 text-right">
+                      <Button onClick={() => goToLink('https://www.instagram.com/terpusat')} variant="outline-primary" size="sm">Kunjungi</Button>
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -135,6 +141,9 @@ const HomePage = () => {
                     <Card.Text className="font-12">
                       Ikutin kami di Twitter, dan pastikan Anda menerima pembaharuan terpusat di twitter
                     </Card.Text>
+                    <Card.Text className="font-12 text-right">
+                      <Button onClick={() => goToLink('https://www.twitter.com/terpusat')} variant="outline-primary" size="sm">Kunjungi</Button>
+                    </Card.Text>
                   </Card.Body>
                 </Card>
               </CardDeck>
@@ -143,9 +152,12 @@ const HomePage = () => {
               <CardDeck>
                 <Card>
                   <Card.Body>
-                    <Card.Title className="font-14">Line</Card.Title>
+                    <Card.Title className="font-14">WhatsApp</Card.Title>
                     <Card.Text className="font-12">
-                      Ikutin kami di Line, dan pastikan Anda menerima pembaharuan terpusat di line Today
+                      Hubungi kami sekarang, dapatkan penawaran terbaik
+                    </Card.Text>
+                    <Card.Text className="font-12 text-right">
+                      <Button onClick={() => goToLink('https://wa.me/+6289531803699?text=Halo%20terpusat')} variant="outline-primary" size="sm">Kunjungi</Button>
                     </Card.Text>
                   </Card.Body>
                 </Card>
