@@ -6,6 +6,10 @@ query ProductsPageQuery {
         id
         name
         slug
+        images(first: 1) {
+          url
+          id
+        }
     }
   }
 `

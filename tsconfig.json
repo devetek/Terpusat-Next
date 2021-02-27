@@ -9,6 +9,8 @@
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
+    "importHelpers": true,
+    "removeComments": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -19,9 +21,10 @@
     "jsx": "preserve",
     "baseUrl": "./",
     "paths": {
-      "@styles/*": ["styles/*"],
       "@libs/*": ["libs/*"],
+      "@styles/*": ["styles/*"],
       "@queries/*": ["queries/*"],
+      "@components/*": ["components/*"],
     }
   },
   "include": [

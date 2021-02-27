@@ -1,0 +1,44 @@
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  animation: #{$str};
+}
+
+@include keyframes(fade) {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 160px;
+}
+
+.placeholder {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 160px;
+  position: absolute;
+  background: rgb(128, 128, 128);
+  @include animation("fade 5s infinite");
+}
+
+.imgMaxHeight {
+  height: 160px;
+  max-height: 160px;
+}

@@ -1,0 +1,27 @@
+// Slider - Container
+.scrollingWrapper{
+	overflow-x: auto;
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+}
+
+.scrollingWrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollingItemContainer {
+    height: 320px;
+}
+
+// Slider - Item
+.itemBody {
+	padding: 10px;
+}
+
+.buttonMPContainer {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	left: 15px;
+    padding: 0;
+}
