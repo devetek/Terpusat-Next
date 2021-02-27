@@ -1,7 +1,7 @@
 .footermobilecontainer {
-    position: fixed;
-    padding: 10px;
-    bottom: 0px;
+  position: fixed;
+  padding: 10px;
+  bottom: 0px;
 }
 
 .heading {
@@ -22,4 +22,26 @@
 .navlinknon a:hover,
 .navlinknon a:focus {
   color: #555 !important;
+}
+
+/**
+* Global Floating button
+*
+*/
+.floatingGlobalButton {
+  width: 40px;
+  height: 40px;
+  bottom: 80px;
+  right: 20px;
+  position: fixed;
+  z-index: 1;
+  background-color: #0c9;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+}
+
+.floatingGlobalButtonContent {
+  margin-top: 10px;
 }
