@@ -13,6 +13,7 @@ import '@styles/globals.scss';
  * - https://graphcms.com/
  * - https://react-bootstrap.github.io/
  * - https://github.com/luckdev01/React-NextJS-Graphql-eCommerce
+ * - https://www.bootdey.com/
  */
 const App = ({ Component, pageProps }: AppProps) => {
   return (
