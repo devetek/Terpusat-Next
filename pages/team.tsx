@@ -28,9 +28,9 @@ const TeamPage = () => {
       <main>
         <Container fluid className="p-0">
           <Row className={clsx('mt-4 pt-2')}>
-            {teams.map(team => {
+            {teams.map((team, index) => {
               return (
-                <Col xs={12} sm={6} md={8} lg={4} xl={3} className={clsx('pb-2 pt-2')}>
+                <Col key={`${team.color}-${index}`} xs={12} sm={6} md={8} lg={4} xl={3} className={clsx('pb-2 pt-2')}>
                   <CardDeck>
                     <Card>
                       <Card.Img variant="top" src={`https://via.placeholder.com/340x120/${team.color}/000000`} />
