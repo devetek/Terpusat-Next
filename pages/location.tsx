@@ -132,16 +132,14 @@ const LocationPage = () => {
                         <Card.Title as="h6">Barang</Card.Title>
                         <Card.Subtitle className="mb-2 font-13 text-muted">Yang tersedia di lokasi kami</Card.Subtitle>
                         <Card.Text className="font-14">
-                          <div>
-                            <Badge pill variant="primary">Peternakan</Badge>{' '}
-                            <Badge pill variant="secondary">Pertanian</Badge>{' '}
-                            <Badge pill variant="success">Fashion Wanita</Badge>{' '}
-                            <Badge pill variant="danger">Pets / Hewan Peliharaan</Badge>{' '}
-                            <Badge pill variant="warning">Perikanan</Badge>{' '}
-                            <Badge pill variant="info">Alat Tulis Kantor</Badge>{' '}
-                            <Badge pill variant="light">Makanan dan Minuman</Badge>{' '}
-                            <Badge pill variant="dark">Lainnya</Badge>
-                          </div>
+                          <Badge pill variant="primary">Peternakan</Badge>{' '}
+                          <Badge pill variant="secondary">Pertanian</Badge>{' '}
+                          <Badge pill variant="success">Fashion Wanita</Badge>{' '}
+                          <Badge pill variant="danger">Pets / Hewan Peliharaan</Badge>{' '}
+                          <Badge pill variant="warning">Perikanan</Badge>{' '}
+                          <Badge pill variant="info">Alat Tulis Kantor</Badge>{' '}
+                          <Badge pill variant="light">Makanan dan Minuman</Badge>{' '}
+                          <Badge pill variant="dark">Lainnya</Badge>
                         </Card.Text>
                       </Card.Body>
                     </Card>
