@@ -20,8 +20,6 @@ const LazyImage = ({ src, alt, link }: LazyImageProps) => {
 
     return (
         <>
-            {/* <Placeholder ref={ref} alt={alt} placeholder={placeholder} /> */}
-            {/* <img ref={ref} className="card-img-top" alt={alt} src={finalSrc} /> */}
             <div className={styles.container}>
                 <div ref={ref} className={styles.placeholder} />
                 <LazyLoad>
