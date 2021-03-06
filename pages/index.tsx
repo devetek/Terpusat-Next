@@ -2,12 +2,9 @@ import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import clsx from 'clsx';
 import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
 
-import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import CardDeck from 'react-bootstrap/CardDeck';
 import Layout from '@components/Layout';
 import Slides from '@components/Products/Slides';
 import GraphqlClient from '@libs/graphql';

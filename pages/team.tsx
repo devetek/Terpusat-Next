@@ -1,102 +1,53 @@
 import clsx from 'clsx';
 import Head from 'next/head';
-import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import CardDeck from 'react-bootstrap/CardDeck';
+import Card from 'react-bootstrap/Card';
+import Image from 'react-bootstrap/Image';
+import Button from 'react-bootstrap/Button';
 
 import Layout from 'components/Layout';
 
+import teams from '@data-static/teams.json';
+
+import styles from '@styles/Team.module.scss';
+
 const TeamPage = () => {
+  const goToLink = (link: any, newtab: any = '_blank') => {
+    window.open(link, newtab);
+  }
+
   return (
     <Layout>
       <Head>
         <title>Team - Terpusat</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="msapplication-TileColor" content="#000000" />
-
-        <meta name="msapplication-TileImage" content="/assets/images/ico/ms-icon-144x144.png" />
         <meta name="description" content="Team Terpusat, dibalik pusat belanja, investasi, layanan, informasi untuk majukan brand Indonesia." />
       </Head>
-
       <main>
         <Container fluid className="p-0">
           <Row className={clsx('mt-4 pt-2')}>
-            <Col xs={12} md={12} lg={12}>
-              <h4>Operasional</h4>
-            </Col>
-            <Col xs={6} md={6} lg={3} className={clsx('pb-2 pt-2')}>
-              <CardDeck>
-                <Card>
-                  <Card.Body>
-                    <Card.Title className="font-14">Gandhos</Card.Title>
-                    <Card.Text className="font-12">
-                      Semangat kejujuran dan kerja keras selalu dijunjung tinggi. Semoga semakin hari sholatnya semakin tidak ada yang bolong.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </CardDeck>
-            </Col>
-          </Row>
-          <Row className={clsx('mt-4 pt-2')}>
-            <Col xs={12} md={12} lg={12}>
-              <h4>Digital</h4>
-            </Col>
-            <Col xs={6} md={6} lg={3} className={clsx('pb-2 pt-2')}>
-              <CardDeck>
-                <Card>
-                  <Card.Body>
-                    <Card.Title className="font-14">Ruli</Card.Title>
-                    <Card.Text className="font-12">
-                      Anak muda dengan semangat berapi. Dukung dan do'akan semoga semakin dewasa dan menjadi semakin baik.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </CardDeck>
-            </Col>
-            <Col xs={6} md={6} lg={3} className={clsx('pb-2 pt-2')}>
-              <CardDeck>
-                <Card>
-                  <Card.Body>
-                    <Card.Title className="font-14">Daus</Card.Title>
-                    <Card.Text className="font-12">
-                      Freshgraduade yang haus akan belajar. Dedikasi dan konsistensi membuat hasil yang tidak bisa dibohongi.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </CardDeck>
-            </Col>
-            <Col xs={6} md={6} lg={3} className={clsx('pb-2 pt-2')}>
-              <CardDeck>
-                <Card>
-                  <Card.Body>
-                    <Card.Title className="font-14">Jodi</Card.Title>
-                    <Card.Text className="font-12">
-                      Bertalenta dan berkomitmen di bidang fotografer. Foto yang dihasilkan sangat memanjakan mata.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </CardDeck>
-            </Col>
-          </Row>
-          <Row className={clsx('mt-4 pt-2')}>
-            <Col xs={12} md={12} lg={12}>
-              <h4>System</h4>
-            </Col>
-            <Col xs={6} md={6} lg={3}>
-              <CardDeck>
-                <Card>
-                  <Card.Body>
-                    <Card.Title className="font-14">Prakasa</Card.Title>
-                    <Card.Text className="font-12">
-                      Hamba Allah, seorang ayah dan suami yang fakir, berusaha menjalankan kehidupan sesuai kemampuan.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </CardDeck>
-            </Col>
+            {teams.map(team => {
+              return (
+                <Col xs={12} sm={6} md={8} lg={4} xl={3} className={clsx('pb-2 pt-2')}>
+                  <CardDeck>
+                    <Card>
+                      <Card.Img variant="top" src={`https://via.placeholder.com/340x120/${team.color}/000000`} />
+                      <Card.Body className="text-center">
+                        <Image className={clsx(styles.imgProfile, 'img-thumbnail img-thumbnail')} alt="User" src={team.avatar} roundedCircle />
+                        <Card.Title>{team.name}</Card.Title>
+                        <Card.Text className="text-secondary mb-1">{team.position}</Card.Text>
+                        <Card.Text className="text-muted font-size-sm">{team.address}</Card.Text>
+                      </Card.Body>
+                      <Card.Footer className={clsx(styles.cardFooterProfile, "text-right")}>
+                        <Button onClick={() => goToLink(team.waLink)} variant="outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" strokeLinejoin="round" className="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></Button>
+                      </Card.Footer>
+                    </Card>
+                  </CardDeck>
+                </Col>
+              )
+            })}
           </Row>
         </Container>
       </main>

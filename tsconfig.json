@@ -22,6 +22,7 @@
     "baseUrl": "./",
     "paths": {
       "@libs/*": ["libs/*"],
+      "@data-static/*": ["data-static/*"],
       "@styles/*": ["styles/*"],
       "@queries/*": ["queries/*"],
       "@components/*": ["components/*"],

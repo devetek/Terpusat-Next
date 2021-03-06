@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Gandhos",
+        "position": "Head of Operasional",
+        "address": "Ciracas, Jakarta, Indonesia",
+        "phone": "+62 821-3818-4418",
+        "waLink": "https://wa.me/+6282138184418?text=Halo%20Gandhos",
+        "avatar": "/assets/images/avatar/Gandhos.png",
+        "color": "191970"
+    },
+    {
+        "name": "Ruli",
+        "position": "Head of Digital",
+        "address": "Bogor, Indonesia",
+        "phone": "+62 858-8586-2968",
+        "waLink": "https://wa.me/+6285885862968?text=Halo%20Uli",
+        "avatar": "/assets/images/avatar/Uli.png",
+        "color": "87CEFA"
+    },
+    {
+        "name": "Prakasa",
+        "position": "Head of Tech",
+        "address": "Wonogiri, Indonesia",
+        "phone": "+62 821-1346-8822",
+        "waLink": "https://wa.me/+6282113468822?text=Halo%20Prakasa",
+        "avatar": "/assets/images/avatar/Prakasa.png",
+        "color": "20B2AA"
+    },
+    {
+        "name": "Daus",
+        "position": "Digital Content",
+        "address": "Bogor, Indonesia",
+        "phone": "+62 812-6198-2928",
+        "waLink": "https://wa.me/+6281261982928?text=Halo%20Daus",
+        "avatar": "/assets/images/avatar/Daus.png",
+        "color": "FF4500"
+    },
+    {
+        "name": "Jodi",
+        "position": "Digital Media",
+        "address": "Bogor, Indonesia",
+        "phone": "+62 812-9502-4723",
+        "waLink": "https://wa.me/+6281295024723?text=Halo%20Jodi",
+        "avatar": "/assets/images/avatar/Jodi.png",
+        "color": "DB7093"
+    }
+]
